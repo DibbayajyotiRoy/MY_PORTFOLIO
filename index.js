@@ -25,8 +25,7 @@ var tl = gsap.timeline();
 tl.from(".child span", {
   x: 100,
   stagger: .2,
-  duration: 2,
-  delay: 1,
+  duration: 1.35,
   ease: Power3.easeInOut,
 });
 
@@ -35,3 +34,25 @@ tl.to(".parent .child", {
   duration: 1,
   ease: Circ.easeInOut,
 });
+
+
+tl.to("#loader", {
+    height: 0,
+    duration: 1,
+    ease: Circ.easeInOut,
+  });
+
+tl.to("#green", {
+    height: "100%",
+    top: 0,
+    duration: 1,
+    delay: -.82,
+    ease: Circ.easeInOut,
+  });
+
+  tl.to("#green", {
+    height: 0,
+    duration: 1,
+    delay: -.5,
+    ease: Circ.easeInOut,
+  });
