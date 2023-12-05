@@ -18,9 +18,9 @@ function revealToSpan() {
   });
 }
 
-revealToSpan();
 
-var tl = gsap.timeline();
+function loaderAnimation(){
+  var tl = gsap.timeline();
 
 tl.from(".child span", {
   x: 100,
@@ -56,3 +56,32 @@ tl.to("#green", {
     delay: -.5,
     ease: Circ.easeInOut,
   });
+}
+
+function animateSvg(){
+  document.querySelectorAll("#Visual>g").forEach(function(e){
+    var character =e.childNodes[1].childNodes[1]
+
+    character.style.strokeDasharray = character.getTotalLength() + 'px'
+    character.style.strokeDashoffset = character.getTotalLength() + 'px'
+  })
+
+  gsap.to("#Visual>g>g>path, #Visual>g>g>polyline",{
+    strokeDashoffset : 0 ,
+    duration : 4,
+    repeat:-1,
+    yoyo:true,
+    ease:"power1"
+
+  })
+}
+
+
+revealToSpan();
+loaderAnimation();
+animateSvg();
+
+
+
+
+  

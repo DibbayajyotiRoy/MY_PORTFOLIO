@@ -20,6 +20,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100vh;
+    z-index: 9999;
     background-color: #151515;
     color: #fff;
 }
@@ -132,4 +133,44 @@ body {
 
 #nav a:hover #line1 {
     width: 100%;
+}
+
+.row{
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #333;
+    line-height: 1;
+    padding: 0 7vw;
+    padding-right: 12vw;
+}
+
+.row h1{
+    font-size: 13vw;
+    font-weight: 700;
+}
+
+.row .text{
+    margin-top: 0vw;
+}
+
+.row h5{
+    opacity: .6;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.row :nth-child(3){
+    margin-top: 0;
+}
+
+.row svg{
+    height: 150px;
+    margin: 0 3vw;
+}
+
+path, polyline {
+    stroke: #14cf93;
 }
