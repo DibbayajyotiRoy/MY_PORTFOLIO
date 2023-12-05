@@ -18,9 +18,9 @@ body {
 
 #loader {
     position: absolute;
+    z-index: 9999;
     width: 100%;
     height: 100vh;
-    z-index: 9999;
     background-color: #151515;
     color: #fff;
 }
@@ -72,6 +72,7 @@ body {
 
 #green {
     position: absolute;
+    z-index: 999;
     top: 100%;
     width: 100%;
     height: 0vh;
@@ -135,42 +136,47 @@ body {
     width: 100%;
 }
 
-.row{
-    margin-top: 5vw;
+.row {
+    margin-top: 2vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     color: #333;
-    line-height: 1;
     padding: 0 7vw;
+    line-height: 1.2;
     padding-right: 12vw;
 }
 
-.row h1{
-    font-size: 13vw;
+.row h1 {
+    display: block;
+    margin-bottom: 0;
+    font-size: 12vw;
     font-weight: 700;
+    transform-origin: center bottom;
+    transform-style: preserve-3d;
 }
 
-.row .text{
+.row .text {
     margin-top: 0vw;
 }
 
-.row h5{
+.row h5 {
     opacity: .6;
     font-size: 11px;
     font-weight: 500;
 }
 
-.row :nth-child(3){
+.row :nth-child(3) {
     margin-top: 0;
 }
 
-.row svg{
-    height: 150px;
-    margin: 0 3vw;
+.row svg {
+    height: 9vw;
+    margin: 0 2.5vw;
 }
 
-path, polyline {
+path,
+polyline {
     stroke: #14cf93;
 }
