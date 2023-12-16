@@ -17,7 +17,7 @@ body {
 }
 
 #loader {
-    position: absolute;
+    position: fixed;
     z-index: 9999;
     width: 100%;
     height: 100vh;
@@ -82,7 +82,7 @@ body {
 
 #home {
     width: 100%;
-    height: 200vh;
+    height: 100vh;
     background-color: #f0f0f0;
 }
 
@@ -179,4 +179,99 @@ body {
 path,
 polyline {
     stroke: #14cf93;
+}
+
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20vw;
+    width: 100%;
+    padding: 12vw 7vw;
+    /* height: 120vh;*/
+}
+
+#about #imglef {
+    width: 30%;
+   
+}
+
+#imglef h1 {
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 2.4vw;
+    color: #333;
+}
+
+#imglef h1 span {
+    color: #14CF93;
+    font-family: 'Mazius Review';
+    font-style: italic;
+    font-weight: 100;
+}
+
+#imgrig {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    /* background-color: yellow;*/
+}
+
+#imgrig .img-container {
+    position: absolute;
+    width: 27vw;
+    height: 40vw;
+    border-radius: 1vw;
+    filter: grayscale();
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    background-color: red;
+    z-index: 9999;
+}
+
+#imgrig .img-container:hover {
+    filter: grayscale(0);
+}
+
+#imgrig .img-container:nth-child(1) {
+    transform: translate(-40%, -8%) rotate(-20deg);
+    background-image: url(https://images.unsplash.com/photo-1570158268183-d296b2892211?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#imgrig .img-container:nth-child(2) {
+    transform: translate(-15%, 0%) rotate(-15deg);
+    background-image: url(https://images.unsplash.com/photo-1540331547168-8b63109225b7?q=80&w=1919&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#imgrig .img-container:nth-child(3) {
+    transform: translate(20%, 10%) rotate(-5deg);
+    background-image: url(https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#work {
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+    background-color: #f2f2f2;
+}
+
+#work::before {
+    position: absolute;
+    content: "";
+    top: -75px;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    transform: rotate(-180deg);
+    background-image: url(https://abhishekjha.me/rip.f6d7c4dd.svg);
+    background-size: cover;
 }
