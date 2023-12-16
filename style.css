@@ -12,6 +12,12 @@ body {
     font-family: 'gilroy';
 }
 
+span .maz{
+    font-family: "Mazius Review";
+    color: #14CF93;
+    font-style: italic;
+}
+
 #main {
     width: 100%;
 }
@@ -62,10 +68,6 @@ body {
     font-weight: 500;
 }
 
-#loader span {
-    font-family: "Mazius Review";
-}
-
 .parent .child span {
     display: inline-block;
 }
@@ -83,7 +85,7 @@ body {
 #home {
     width: 100%;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #fffefe;
 }
 
 #home #nav {
@@ -188,7 +190,7 @@ polyline {
     align-items: center;
     margin-top: 20vw;
     width: 100%;
-    padding: 12vw 7vw;
+    padding: 7vw 7vw;
     /* height: 120vh;*/
 }
 
@@ -229,7 +231,7 @@ polyline {
     filter: grayscale();
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
     background-color: red;
-    z-index: 9999;
+    z-index: 99;
 }
 
 #imgrig .img-container:hover {
@@ -258,6 +260,7 @@ polyline {
 }
 
 #work {
+    padding-top: 150px;
     position: relative;
     width: 100%;
     min-height: 70vh;
@@ -270,8 +273,43 @@ polyline {
     top: -75px;
     position: absolute;
     width: 100%;
-    height: 300px;
+    height: 150px;
     transform: rotate(-180deg);
     background-image: url(https://abhishekjha.me/rip.f6d7c4dd.svg);
     background-size: cover;
+}
+
+#work .workrow{
+    padding: 0 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#work .workrow span{
+    font-family: "Mazius Review";
+    color: #14CF93;
+    font-style: italic;
+}
+
+#work .workrow h1{
+    font-size: 7vw;
+    font-weight: 600;
+    display: flex;
+    align-items: baseline;
+}
+
+.workrow .mini{
+    font-size: 2vw;
+    font-weight: 500;
+    margin-left: 5vw;
+}
+
+.o-ui-arrow path{
+    stroke: rgb(65, 65, 65.3);
+}
+
+.o-ui-arrow{
+    transform: rotate(90deg);
+    font-size: 5vw;
 }
